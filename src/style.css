@@ -1,0 +1,123 @@
+/* Configuration de base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #2d3436;
+}
+
+.game {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2.5rem;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  text-align: center;
+  max-width: 600px;
+  width: 95%;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #4834d4;
+}
+
+/* Score et Feedback */
+.score {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.botChoice {
+  height: 80px; /* Réserve l'espace pour l'image du bot */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.botChoice img {
+  height: 50px;
+  width: auto;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.status {
+  height: 1.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #eb4d4b; /* Couleur par défaut */
+  margin-bottom: 20px;
+}
+
+/* Grille des boutons (Plateau) */
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centre les éléments sur chaque ligne */
+  gap: 15px;
+  max-width: 400px; /* Force le passage à la ligne au bon moment */
+  margin: 0 auto 30px auto;
+}
+
+.cell {
+  background: white;
+  border: 3px solid #f0f2f5;
+  border-radius: 15px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell img {
+  width: 100px; /* Taille uniforme pour tes icônes */
+  height: 100px;
+  object-fit: contain;
+}
+
+.cell:hover {
+  border-color: #4834d4;
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.cell:active {
+  transform: scale(0.95);
+}
+
+/* Boutons de contrôle */
+.reset {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: filter 0.2s;
+}
+
+.reset:first-of-type {
+  background-color: #dfe6e9;
+  color: #2d3436;
+}
+
+.reset:last-of-type {
+  background-color: #483}
+
+.reset:hover {
+  filter: brightness(0.9);
+}

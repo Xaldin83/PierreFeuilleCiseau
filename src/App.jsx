@@ -55,7 +55,7 @@ function App() {
       <h1>{!lizardSpok?"Pierre Feuille Ciseau":"Pierre Feuille Ciseau Lézard Spok"}</h1>
 
       <p className="score">Votre Score : {score}</p>
-      <p>{botChoices?<span>Choix du bot :{botChoices}</span>:""}</p>
+      <p className='botChoice'>{botChoices?<span>Choix du bot :  <img src = {`/images/${botChoices}.png`}/></span>:""}</p>
       <p className="status">
         {winner ? (winner!="None"?
         <span>Gagnant : {winner}</span>:"Match Nul !") 
@@ -64,7 +64,7 @@ function App() {
       <div className="board">
         {boardChoice.map((cell,i)=>(
           <button key={i} name="pad" className="cell" onClick={()=>handleClick(cell)}>
-            {cell}
+            <img src = {`/images/${cell}.png`}/>
           </button>
         ))}
       </div>
