@@ -68,7 +68,7 @@ function App() {
           </button>
         ))}
       </div>
-      <button className="reset" onClick={reset}>Rejouer</button>
+      <button className="reset" onClick={reset}>Réinitialiser le score</button>
 
       <button className="reset" onClick={gameLizardSpok}>{!lizardSpok ? (
         <span>Jouer en mode Lezard Spok</span>) 

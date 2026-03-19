@@ -63,7 +63,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Centre les éléments sur chaque ligne */
-  gap: 15px;
+  gap: 5px;
   max-width: 400px; /* Force le passage à la ligne au bon moment */
   margin: 0 auto 30px auto;
 }
