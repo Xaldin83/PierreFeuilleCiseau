@@ -22,6 +22,8 @@ function App() {
 
   function gameLizardSpok(){
     setLizardSpok(!lizardSpok)
+    setWinner(null)
+    setBotChoices(null)
     changeList()
     setScore(0)
   }
